@@ -70,7 +70,7 @@ async function run() {
         ', '
       )}`)
     }
-  
+
     const checks = await octokit.checks.listForRef({
       ...context.repo,
       ref: context.payload.pull_request.head.ref,

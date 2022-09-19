@@ -20,7 +20,7 @@ outputs:
   passed:
     description: 'Have the provided labels passed all tests?'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
 branding:
   icon: 'tag'
