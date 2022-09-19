@@ -15,7 +15,8 @@ inputs:
     required: false
   githubToken:
     description: 'The Github secret token to access PR check API'
-    required: true
+    required: false
+    default: ${{ github.token }}
 outputs:
   passed:
     description: 'Have the provided labels passed all tests?'
